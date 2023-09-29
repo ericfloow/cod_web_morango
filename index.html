@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- Define o tipo de documento HTML -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização responsiva em dispositivos móveis -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 (Unicode) -->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Importa um arquivo CSS externo para estilizar a página -->
+    <title>Controle e Monitoramento</title> <!-- Define o título da página exibido na barra de título do navegador -->
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Monitoramento</h1>
+
+    <!-- Div para exibir dados do sensor -->
+    <div id="sensor-data">
+        <!-- Parágrafo para exibir a temperatura -->
+        <p>Temperatura: <span id="temperature"></span></p>
+        <!-- Parágrafo para exibir a umidade -->
+        <p>Umidade: <span id="humidity"></span></p>
+        <!-- Parágrafo para exibir a luminosidade -->
+        <p>Luminosidade: <span id="light"></span></p>
+    </div>
+    
+    <!-- Div para os botões de controle -->
+    <div id="controls">
+        <!-- Botão para abrir a estufa -->
+        <button id="motor-button-open">Abrir Estufa</button>
+        <!-- Botão para fechar a estufa -->
+        <button id="motor-button-close">Fechar Estufa</button>
+        <!-- Botão para ligar a bomba -->
+        <button id="bombaqua">Ligar Bomba</button>
+        <!-- Botão para selecionar o "Modo Manual" -->
+        <button id="manual">Modo Manual</button>
+        <!-- Botão para selecionar o "Modo Automático" -->
+        <button id="auto">Modo Automatico</button>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script type="module" src="script.js"></script> <!-- Importa um arquivo JavaScript externo para adicionar funcionalidade à página -->
+</body>
+</html>

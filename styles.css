@@ -1,0 +1,77 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o corpo da página */
+    margin: 0; /* Remove margens externas */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px */
+    background-color: #f0f0f0; /* Define a cor de fundo */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Estilos para o título */
+h1 {
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    color: #333; /* Define a cor do texto do título */
+    margin-bottom: 20px; /* Adiciona margem inferior ao título */
+}
+
+/* Estilos para a seção de dados do sensor */
+#sensor-data {
+    background-color: #fff; /* Define a cor de fundo da seção de dados */
+    padding: 20px; /* Adiciona preenchimento interno de 20px à seção de dados */
+    border-radius: 5px; /* Adiciona cantos arredondados à seção de dados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+#sensor-data p {
+    font-size: 16px; /* Define o tamanho da fonte para os parágrafos */
+    color: #333; /* Define a cor do texto dos parágrafos */
+    margin: 10px 0; /* Adiciona margem superior e inferior aos parágrafos */
+}
+
+/* Estilos para os botões */
+#controls {
+    display: flex; /* Usa um layout flexível para os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha em telas menores */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Adiciona margem superior aos botões */
+}
+
+button {
+    background-color: #007bff; /* Define a cor de fundo dos botões */
+    color: #fff; /* Define a cor do texto dos botões */
+    font-size: 16px; /* Define o tamanho da fonte dos botões */
+    border: none; /* Remove a borda dos botões */
+    border-radius: 5px; /* Adiciona cantos arredondados aos botões */
+    padding: 10px 20px; /* Adiciona preenchimento interno aos botões */
+    cursor: pointer; /* Define o cursor como apontador quando passa sobre os botões */
+    margin: 5px; /* Adiciona margem externa aos botões */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor de fundo */
+    margin-bottom: 10px; /* Adiciona margem inferior para separar os botões */
+}
+
+button:hover {
+    background-color: #0056b3; /* Define a cor de fundo dos botões ao passar o mouse sobre eles */
+}
+
+/* Estilos para o botão de modo manual */
+#manual {
+    background-color: #28a745; /* Define a cor de fundo do botão de modo manual */
+}
+
+/* Estilos para o botão de modo automático */
+#auto {
+    background-color: #dc3545; /* Define a cor de fundo do botão de modo automático */
+}
+
+/* Estilos para o layout responsivo */
+@media (max-width: 768px) {
+    #controls {
+        flex-direction: column; /* Empilha os botões verticalmente em telas menores */
+        align-items: center; /* Centraliza os botões verticalmente em telas menores */
+    }
+
+    button {
+        width: 100%; /* Define a largura dos botões como 100% em telas menores */
+        margin-bottom: 5px; /* Adiciona margem inferior menor para separar os botões em telas menores */
+    }
+}
