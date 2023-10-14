@@ -107,7 +107,7 @@ solenoidButton.addEventListener('click', () => {
  function updateDataOnPage(data) {
  temperatureElement.textContent = `${data.Temperatura}°C`;
  humidityElement.textContent = `${data.Umidade}%`;
- lightElement.textContent = `${data.Luminosidade} lux`;
+ lightElement.textContent = `${data.Luminosidade}%`;
  }
  
  // Listener para atualizar os valores conforme o banco de dados é modificado
